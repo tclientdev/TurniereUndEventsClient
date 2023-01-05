@@ -52,6 +52,7 @@
             this.settings_button.AutoSize = true;
             this.settings_button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.settings_button.BackColor = System.Drawing.SystemColors.Window;
+            this.settings_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settings_button.Location = new System.Drawing.Point(771, 427);
             this.settings_button.Name = "settings_button";
             this.settings_button.Size = new System.Drawing.Size(29, 23);

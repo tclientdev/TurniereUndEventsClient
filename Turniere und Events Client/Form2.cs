@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Turniere_und_Events_Client
@@ -19,8 +12,14 @@ namespace Turniere_und_Events_Client
 
         private void settings_window_FormClosing(object sender, FormClosingEventArgs e)
         {
-                this.Hide();
-                e.Cancel = true;    // Do not close the form.
+            this.Hide();
+            e.Cancel = true;    // Do not close the form.
+        }
+
+        changelog_window thirdForm = new changelog_window();
+        private void changelog_button_Click(object sender, EventArgs e)
+        {
+            thirdForm.Show();
         }
     }
 }

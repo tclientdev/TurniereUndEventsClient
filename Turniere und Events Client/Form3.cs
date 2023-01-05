@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Turniere_und_Events_Client
 {
-    public partial class main_window : Form
+    public partial class changelog_window : Form
     {
-        public main_window()
+        public changelog_window()
         {
             InitializeComponent();
         }
 
-        settings_window secondForm = new settings_window();
-        private void settings_button_Click(object sender, EventArgs e)
+        private void changelog_window_FormClosing(object sender, FormClosingEventArgs e)
         {
-            secondForm.Show();
+            this.Hide();
+            e.Cancel = true;    // Do not close the form.
         }
     }
 }
